@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a {
+            width: auto;
+            height: auto;
+            /* border: 2px solid; */
+            display: flex;
+        }
+
+        #b {
+            width: 250px;
+            height: auto;
+            /* border: 2px solid; */
+        }
+
+        .a {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+
+        <div id="a">
+            <div id="b">
+                <label class="a" for="fn">FullName</label><br>
+                <label for="ln">LastName</label><br>
+                <label for="date">Date of Brith</label> <br>
+                <label for="gender">gender</label> <br>
+                <label for="email">Email</label> <br>
+                <label for="num">Mobile Number</label> <br><br><br><br><br><br><br><br>
+                <label for="address">Address</label> <br><br><br>
+                <label for="city">CITY</label> <br>
+                <label for="zip">PIN CODE</label> <br>
+                <label for="state">STATE</label> <br>
+                <label for="country">COUNTRY</label> <br><br>
+                <label for="hobbies">HOBBIES</label> <br><br><br><br><br><br>
+                <label for="">Qualification</label><br><br><br>
+                <label for="">COURESS APPLIED FOR </label><br>
+
+                <input type="submit">
+            </div>
+            <div id="c">
+                <input type="text" id="fn" name="fn" maxlength="20" pattern="[a-z]{},[A-Z]{}"><br>
+                <input type="text" id="ln" name="ln" maxlength="20" pattern="[a-z]{},[A-Z]{}"><br>
+                <input type="date" id="date" name="date"><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="email" id="email" name="email"><br>
+                <input type="tel" id="num" name="num" pattern="[0-9]{10}"><br>
+                <textarea name="address" id="" rows="10" cols="50"></textarea><br>
+                <input type="text" id="city" name="city"><br>
+                <input type="text" id="zip" name="zip" pattern="[0-9]{6}"><br>
+                <input type="text" id="state" name="state"><br>
+                <input type="text" id="country" name="country"><br>
+                <input type="checkbox" id="hobbies" name="hobbies" value="drawing">Drawing
+                <input type="checkbox" id="hobbies" name="hobbies" value="singing">Singing
+                <input type="checkbox" id="hobbies" name="hobbies" value="dancing">Dancing <br>
+                <input type="checkbox" id="hobbies" name="hobbies" value="others">Others
+                <input type="text"><br>
+
+                <table>
+                    <tr>
+
+                        <th>Sl.No </th>
+                        <th>Examination</th>
+                        <th>Board</th>
+                        <th>Percentage</th>
+                        <th>Year of Passing</th>
+                    </tr>
+                    <tr>
+
+                        <td>01</td>
+                        <td>ClassX</td>
+                        <td><input type="text" name="examination1"></td>
+                        <td><input type="text" name="board1"></td>
+                        <td><input type="text" name="percentage1"></td>
+                        <td><input type="text" name="year1"></td>
+                    </tr>
+                    <tr>
+
+                        <td>02</td>
+                        <td>ClassII</dh>
+                        <td><input type="text" name="examination2"></td>
+                        <td><input type="text" name="board2"></td>
+                        <td><input type="text" name="percentage2"></td>
+                        <td><input type="text" name="year2"></td>
+                    </tr>
+                    <tr>
+
+                        <td>03</td>
+                        <td>Graduatiod</th>
+                        <td><input type="text" name="examination3"></td>
+                        <td><input type="text" name="board3"></td>
+                        <td><input type="text" name="percentage3"></td>
+                        <td><input type="text" name="year3"></td>
+                    </tr>
+                    <tr>
+
+                        <td>04</td>
+                        <td>Master</td>
+                        <td><input type="text" name="examination3"></td>
+                        <td><input type="text" name="board3"></td>
+                        <td><input type="text" name="percentage3"></td>
+                        <td><input type="text" name="year3"></td>
+                    </tr>
+                </table>
+
+                <input type="checkbox" id="couress" name="couress" value="bsc">BSC
+                <input type="checkbox" id="couress" name="couress" value="bcom">B.com
+                <input type="checkbox" id="couress" name="couress" value="bsc">B.sc
+                <input type="checkbox" id="couress" name="couress" value="ba">B.A
+                <br>
+                <input type="reset">
+            </div>
+
+        </div>
+
+
+
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </form>
+</body>
+
+</html>
