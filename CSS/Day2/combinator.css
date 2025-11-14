@@ -1,0 +1,39 @@
+/* Descendent Selector */
+div h1{
+    background-color: lawngreen;
+}
+
+/* Child Selector */
+diV>h1{
+    background-color: orange;
+}
+
+/* Adjacent Sibling Selector */
+
+div>h1+h1{
+    background-color: salmon;
+}
+
+/* General Sibling Selector */
+
+div>h1~h1{
+    background-color: turquoise;
+}
+
+ol>li{
+    background-color: violet;
+}
+
+ol>li+li{
+    background-color: wheat;
+}
+
+ol>li+li+li{
+    background-color: yellow;
+}
+ol>li+li+li+li{
+    background-color: yellowgreen;
+}
+ol>li+li+li+li+li{
+    background-color: green;
+}
