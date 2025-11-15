@@ -1,0 +1,34 @@
+p::first-letter {
+    color: brown;
+}
+
+p::first-line {
+    color: chartreuse;
+}
+
+p::before{
+    content: "🤦‍♂️";
+    content: "hiiiii";
+    color: brown;
+}
+
+p::after {
+    content: "🎉";
+    background-color: blue;
+}
+
+p::selection{
+    background-color: crimson;
+    color: blue;
+}
+
+ol>li::marker{
+    content: "❤️";
+}
+
+input::placeholder{
+    color: chartreuse;
+}
+
+
+
