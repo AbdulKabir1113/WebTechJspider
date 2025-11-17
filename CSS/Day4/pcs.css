@@ -1,0 +1,35 @@
+a:link{
+    color: hotpink;
+}
+
+a:active{
+    color: blueviolet;
+}
+
+a:visited{
+    color: chartreuse;
+}
+
+/* a:unvisited{
+    color: brown;
+} */
+
+#d1:focus{
+    color: chocolate;
+    background-color: red;
+    height: 100px;
+}
+
+input:checked{
+    accent-color: green;
+    height: 150px;
+    width: 100px;
+}
+
+p:hover{
+    cursor: pointer;
+    /* cursor: no-drop; */
+    background-color: blueviolet;
+}
+
+
