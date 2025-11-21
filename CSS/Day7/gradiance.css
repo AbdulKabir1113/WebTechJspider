@@ -1,0 +1,57 @@
+body{
+    display: flex;
+}
+div{
+    border: 2px solid;
+    height: 150px;
+    width: 150px;
+}
+
+#a1{
+     background: linear-gradient(to bottom, red,green,pink,gray,black,white,orange,yellow,hotpink,midnightblue);
+}
+#d2{
+    background: linear-gradient(to top, red,green,pink,gray,black,white,orange,yellow,hotpink,midnightblue);
+}
+#d3{
+    background: linear-gradient(to left, red,green,pink,gray,black,white,orange,yellow,hotpink,midnightblue);
+}
+#d4{
+    background: linear-gradient(to right, red,green,pink,gray,black,white,orange,yellow,hotpink,midnightblue);
+}
+#d5{
+    background: linear-gradient(45deg, red,green,pink,gray,black,white,orange,yellow,hotpink,midnightblue);
+}
+#d6{
+    background: linear-gradient(60deg, red,green,pink,gray,black,white,orange,yellow,hotpink,midnightblue);
+}
+#d7{
+    background: radial-gradient( red,green,pink,gray,black,white,orange,yellow,hotpink,midnightblue);
+}
+#d8{
+    background: radial-gradient(farthest-corner at 80% 20%,red,green,pink,gray,black,white,orange,yellow,hotpink,midnightblue);
+}
+#d9{
+    background: radial-gradient(farthest-side at 80% 20%,red,green,pink,gray,black,white,orange,yellow,hotpink,midnightblue);
+}
+#d10{
+    background: radial-gradient(closest-side at 80% 20%, red,green,pink,gray,black,white,orange,yellow,hotpink,midnightblue);
+}
+#d11{
+    background: radial-gradient(closest-corner at 80% 20%, red,green,pink,gray,black,white,orange,yellow,hotpink,midnightblue);
+}
+#d12{
+    background: conic-gradient(red,green,pink,gray,black,white,orange,yellow,hotpink,midnightblue);
+}
+#d13{
+    background: conic-gradient(red,green,pink,gray,black,white,orange,yellow,hotpink,midnightblue);
+    /* /* transform: rotate(2000deg);  */
+    transition-duration: 3s; 
+    border-radius: 50%;
+}
+#d13:hover{
+    background: conic-gradient(red,green,pink,gray,black,white,orange,yellow,hotpink,midnightblue);
+    transform: translateY(500px) rotate(2000deg);
+    transition-duration: 3s;
+    
+}

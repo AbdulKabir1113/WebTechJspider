@@ -1,0 +1,10 @@
+h1{
+    font-size: 90px;
+    font-weight: lighter;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+}
