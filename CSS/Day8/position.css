@@ -1,0 +1,33 @@
+nav{
+    border: 2pxn solid;
+    height: 50px;
+    background-color: orange;
+    /* position: fixed; */
+    position: sticky;
+    top: 0%;
+    width: 100%;
+
+}
+section{
+    border: 2px solid;
+    width: 400px;
+    height: 400px;
+    /* position: relative; */
+
+}
+div{
+    border: 2px solid;
+    height: 100px;
+    width: 100px;
+}
+
+#a1{
+    background-color: blue;
+}
+
+#a2{
+    background-color: yellow;
+    /* position: static; */
+    /* position: absolute; */
+    left: 75%;
+}
