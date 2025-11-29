@@ -1,0 +1,95 @@
+header {
+    border: 2px solid;
+
+    background-color: gray;
+
+    color: rgb(55, 20, 87);
+
+    width: 98%;
+
+    margin-left: 0.5%;
+}
+
+
+footer {
+
+    background-color: gray;
+
+    border: 15px solid rgb(255, 255, 255);
+
+    height: 650px;
+
+
+
+}
+
+div {
+    margin-left: 30%;
+
+    margin-top: 3%;
+}
+
+
+
+#z3 {
+    height: 300px;
+
+    width: 800px;
+
+}
+
+button {
+    background-color: blue;
+
+    border-radius: 25px;
+
+    color: white;
+}
+
+
+
+#z1 {
+    height: 250px;
+
+    width: 250px;
+
+    margin-left: 6%;
+
+
+
+}
+
+
+
+
+
+#z2 {
+    height: 250px;
+
+    width: 250px;
+
+    margin-left: 6%;
+
+
+}
+
+section {
+    border: 2px solid;
+
+    height: 630px;
+
+    width: 280px;
+
+    background-color: white;
+
+    margin-top: -43.7%;
+
+    margin-left: 3%;
+
+    border: none;
+
+}
+
+.d1 {
+    margin-left: 8%;
+}
