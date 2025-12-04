@@ -1,0 +1,67 @@
+div{
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+    transition-duration: 5s;
+    /* margin-left: 30%;
+    margin-top: 20%; */
+}
+
+div:hover{
+    background-color: green;
+    transition-duration: 5s;
+    transform: translate(300px, 100px);
+    transform: translateX(100px);
+    transform: translateY(300px);
+    transform: translateX(100px) rotate(2000deg);
+    transform: rotateX(100deg);
+    transform: rotateY(890deg);
+    transform: scale(2,4);
+    transform: scaleX(4);
+    transform: scaleY(2);
+    transform: scale(-2,-4);
+    transform: skew(50deg,60deg);
+    transform: skewX(60deg);
+    transform: skewY(50deg);
+    transform: matrix(1,2,0,-1,2,-3);
+    transform: translate(300px);
+    transition-timing-function: ease;
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;
+    transition-timing-function: linear;
+}
+
+section{
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+}
+
+section:hover{
+    animation-name: box;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes box {
+    0%{background-color: green; transform: translate(100px); transition-duration: 3s; border-radius: 10px;}
+    10%{background-color: rgb(223, 223, 8); transform: translate(200px); transition-duration: 3s; border-radius: 20px;}
+    30%{background-color: rgb(220, 77, 11); transform: translate(240px); transition-duration: 3s; border-radius: 40px;}
+    50%{background-color: rgb(235, 14, 179); transform: translate(370px); transition-duration: 3s; border-radius: 50px;}
+    60%{background-color: rgb(8, 181, 229); transform: translate(390px); transition-duration: 3s; border-radius: 60px;}
+    70%{background-color: rgb(234, 10, 70); transform: translate(400px); transition-duration: 3s; border-radius: 70px;}
+    80%{background-color: rgb(157, 14, 235); transform: translate(440px); transition-duration: 3s; border-radius: 90px;}
+    100%{background-color: #0bf6d2; transform: translate(500px); transition-duration: 3s; border-radius: 100px;}
+}
+
+@keyframes box {
+from{
+    background-color: green; transform: translate(100px); transition-duration: 3s; border-radius: 10px;
+}
+to{
+    background-color: rgb(234, 10, 70); transform: translate(400px); transition-duration: 3s; border-radius: 70px
+}
+}

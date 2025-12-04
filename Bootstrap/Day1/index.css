@@ -1,0 +1,14 @@
+.cd{
+    display: flex;
+    border: 2px solid;
+    justify-content: center;
+    
+}
+.cr{
+    
+}
+
+.pic{
+    width: 10px;
+    height: 500px;
+}

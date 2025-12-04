@@ -1,0 +1,25 @@
+section{
+    border: 2px solid;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div{
+    border: 2px solid;
+    width: 40px;
+    height: 40px;
+}
+
+/* #d3{
+    align-self: center;
+}  */
+
+#d3{
+    order: -3;
+}
+
+#d1{
+    order: 2;
+}

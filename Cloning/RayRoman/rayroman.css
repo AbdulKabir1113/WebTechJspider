@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.scrollbar{
+    /* border: 2px solid red; */
+    width: 380px;
+    height: auto;
+    position: fixed;
+    top: 30%;
+    left: 70%;
+    /* background-color: #171717; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+.scrollbar .scrollbar_child_div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.scrollbar .circle1{
+    float: right;
+    border-radius: 100%;
+    position: absolute;
+    right: 2%;
+    top: 12%;
+}
+.scrollbar .circle2{
+    float: right;
+    border-radius: 100%;
+    position: absolute;
+    top: 32%;
+    right: 2%;
+}
+.scrollbar .circle3{
+    float: right;
+    border-radius: 100%;
+    position: absolute;
+    top: 52%;
+    right: 2%;
+}
+.scrollbar .circle4{
+    float: right;
+    border-radius: 100%;
+    position: absolute;
+    top: 72%;
+    right: 2%;
+}
+.scrollbar .circle5{
+    float: right;
+    border-radius: 100%;
+    position: absolute;
+    top: 92%;
+    right: 2%;
+}
+.scrollbar .circle1:hover,
+.scrollbar .circle2:hover,
+.scrollbar .circle3:hover,
+.scrollbar .circle4:hover,
+.scrollbar .circle5:hover{
+    border: 3px solid black;
+}
+.scroll_div{
+    /* border: 2px solid red; */
+    float: left;
+    color: #FFFFFF;
+    width: 100%;
+    margin-top: 32px;
+    padding: 10px;
+    opacity: 0;
+}
+.scroll_div b{
+    float: left;
+    padding-top: 0px;
+    color: #16161d;
+    /* width: 100%; */
+    /* opacity: 0; */
+}
+
+.scroll_div:hover{
+    opacity: 1;
+}
+
+
+nav{
+    background-color: white;
+    color: #363636;
+    font-size: 14px;
+    padding: 25px 80px;
+    width: 100%;
+}
+.nav_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_div .nav_child_div1{
+    /* border: 2px solid red; */
+    width: 357px;
+    height: 103px;
+}
+.nav_div div img{
+    max-height: 100px;
+    max-width: 400px;
+    cursor: pointer;
+}
+.nav_div .nav_child_div2{
+    /* border: 2px solid red; */
+    width: 834px;
+    height: 103px;
+    display: flex;
+    align-items: center;
+}
+.nav_div .nav_child_div2 ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3.8%;
+}
+.nav_div .nav_child_div2 ul>li a{
+    text-decoration: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: proxima-nova;
+    color: black;
+    letter-spacing: 3px;
+}
+#active{
+    color: #6a6969;
+}
+.nav_div .nav_child_div2 ul>li a:hover{
+    cursor: pointer;
+    color: #6a6969;
+}
+
+
+/* --------------------------- SECTION 1 STYLES --------------------------   */
+.sec1_div{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 80vh;
+    background-image: url('./assests/Ray+Romano+Loft+renovation+nyc+brooklyn+hamptons+luxury+construction.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 80px;
+    background-attachment: fixed;
+}
+
+.sec1_div .sec1_child_div1{
+    /* border: 2px solid red; */
+    width: fit-content;
+    height: 70px;
+    background-color: #FFFFFF99;
+    padding: 15px 20px;
+    opacity: 0.9;
+}
+.sec1_div div h1{
+    color: #171717;
+    max-width: 100%;
+    font-size: 40px;
+    letter-spacing: 0.179487em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.27em;
+    line-height: 1em;
+    display: inline-block;
+    font-style: normal;
+}
+.sec1_div .sec1_child_div2{
+    /* border: 2px solid red; */
+    width: fit-content;
+    height: 84px;
+    margin: 25px 0px 0px;
+    background-color: #FFFFFFD4;
+    padding: 15px 20px;
+    opacity: 0.9;
+    position: relative;
+}
+.sec1_div .sec1_child_div2 p{
+    color: #171717;
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+}
+.sec1_div .sec1_child_div3{
+    color: #171717;
+    text-transform: none;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1em;
+    position: absolute;
+    bottom: 7%;
+    left: 45%;
+}
+.sec1_div .sec1_child_div3 a{
+    color: #171717;
+    text-decoration: none;
+}
+.sec1_div .sec1_child_div3 h5{
+    /* border: 2px solid; */
+    visibility: hidden;
+    cursor: pointer;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    /* transition-duration: 3s; */
+}
+.sec1_div .sec1_child_div3 h5:hover{
+    visibility: visible;
+    color: black;
+    content: 'Hello';
+}
+.sec1_div .sec1_child_div3 i:hover{
+    visibility: hidden
+}
+.sec1_div .sec1_child_div3 i{
+    padding: 40px 70px 30px 60px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+
+
+/* -------------------- Section 2 ---------------------------- */
+.sec2,
+.sec4{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 400px;
+    background-color: #FFFFFF;
+}
+.sec2_div,
+.sec4_div{
+    /* border: 2px solid red; */
+    background-color: #FFFFFF;
+    padding: 100px 8%;
+    margin: 0px 6.4%;
+    height: 386px
+}
+.sec2_div h1,
+.sec4_div h1{
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-style: normal;
+    margin: 1em 0;
+    color: #16161d;
+}
+.sec2_div span,
+.sec4_div span{
+    font-family: "PT Serif", Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-style: normal;
+}
+
+/* ------------------------ section 3 --------------------- */
+
+.sec3_div{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 80vh;
+    background-image: url('./assests/Ray+Romano+Contracting+combination+renovation+luxury+contemporary+Upper+East+Side+NYC+Hamptons+Brooklyn+NJ.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 80px;
+    background-attachment: fixed;
+}
+
+.sec3_div .sec3_child_div1{
+    /* border: 2px solid red; */
+    width: fit-content;
+    height: fit-content;
+    background-color: #FFFFFF99;
+    padding: 15px 20px;
+    opacity: 0.9;
+}
+.sec3_div div h1{
+    color: #171717;
+    max-width: 100%;
+    font-size: 40px;
+    letter-spacing: 0.179487em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.27em;
+    line-height: 1em;
+    display: inline-block;
+    font-style: normal;
+}
+
+
+/* ------------------------ section 5 --------------------- */
+
+
+.sec5_div{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 80vh;
+    background-image: url('./assests/1040.JPG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 80px;
+    background-attachment: fixed;
+}
+
+.sec5_div .sec5_child_div1{
+    /* border: 2px solid red; */
+    width: fit-content;
+    height: fit-content;
+    background-color: #FFFFFF99;
+    padding: 15px 20px;
+    opacity: 0.9;
+}
+.sec5_div div h1{
+    color: #171717;
+    max-width: 100%;
+    font-size: 40px;
+    letter-spacing: 0.179487em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.27em;
+    line-height: 1em;
+    display: inline-block;
+    font-style: normal;
+}
+
+
+/* ------------------------ section 6 --------------------- */
+
+.sec6{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 85vh;
+    background-color: #FFFFFF;
+}
+
+.sec6_div{
+    /* border: 2px solid red; */
+    background-color: #FFFFFF;
+    padding: 100px 8%;
+    margin: 0px 6.4%;
+    height: 386px
+}
+
+.sec6_div h1{
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    font-style: normal;
+    margin: 1em 0;
+    color: #16161d;
+}
+
+.sec6_div span{
+    font-family: "PT Serif", Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-style: normal;
+}
+
+
+/* ---------------- Section 7   ----------------- */
+
+.sec7_div{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 80vh;
+    background-image: url('./assests/Custom+Closet+Ray+Rompano+Contracting+NYC+Brooklyn+Upper+east+Side+NYC+renovation.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 80px;
+    background-attachment: fixed;
+}
+
+.sec7_div .sec7_child_div1{
+    /* border: 2px solid red; */
+    width: fit-content;
+    height: fit-content;
+    background-color: #FFFFFF99;
+    padding: 15px 20px;
+    opacity: 0.9;
+}
+.sec7_div div h1{
+    color: #171717;
+    max-width: 100%;
+    font-size: 40px;
+    letter-spacing: 0.179487em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.27em;
+    line-height: 1em;
+    display: inline-block;
+    font-style: normal;
+}
+
+
+/* ---------------- Section 8   ----------------- */
+.sec8{
+    /* border: 2px solid red; */
+    background-color: #FFFFFF;
+    padding: 100px 8%;
+    margin: 0px 6.4%;
+    height: fit-content;
+}
+.sec8_div{
+    /* border: 2px solid red; */
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 290px 290px 290px;
+}
+.sec8 .sec8_child_div1 img{
+    width: 297px;
+    height: 198px;
+}
+.sec8 .sec8_child_div1 p{
+    font-size: 12px;
+    line-height: 1.68em;
+    padding: 18px 0px 0px;
+}
+
+
+/* ---------------- FOOTER  ----------------- */
+
+footer{
+    background-color: #171717;
+    height: 150px;
+    position: relative;
+}
+.top_button{
+    display: flex;
+    position: absolute;
+    top: -42px;
+    left: 50%;
+}
+.top_button a{
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    padding: 15px;
+    text-decoration: none;
+    color: #363636;
+    cursor: pointer;
+}
+.top_button a span{
+    display: block;
+    /* margin-left: 0px;
+    margin-bottom: 9px; */
+    cursor: pointer;
+}
+.foot_div{
+    /* border: 2px solid red; */
+    display: flex;
+    /* align-items: center; */
+    padding: 40px 50px 50px 50px;
+    margin: 0px 6.4%;
+    height: 300px;
+}
+.foot_div .foot_child_div1 ul{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 4%;
+    width: 214px;
+    height: 34px;
+    font-size: 14px;
+    list-style: none;
+}
+.foot_div .foot_child_div1 ul>li {
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    padding: 2px;
+}
+.foot_div .foot_child_div1 ul>li:hover{
+    background-color: #FFFFFF;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.foot_div .foot_child_div1 ul>li i{
+    width: 30px;
+    height: 28px;
+    margin-top: 15px;
+}
+.foot_div .foot_child_div2 p{
+    font-weight: 300;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    font-size: 14px;
+    line-height: 1.6em;
+}
