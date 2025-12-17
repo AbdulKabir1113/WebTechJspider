@@ -100,7 +100,4 @@ function demo9(){
 console.log("prototype" in demo9);
 
 let s= demo9()
-console.log(Object.getPrototypeOf);
-
-
-
+console.log(Object.getPrototypeOf(s) == demo9.prototype);
