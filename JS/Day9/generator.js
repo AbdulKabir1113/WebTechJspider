@@ -28,6 +28,8 @@ function * demo(){
 
 
 let t=demo();
+console.log(t);
+
 console.log(t.next().value); // 1 Hello
 t.next().value  // 2
 
