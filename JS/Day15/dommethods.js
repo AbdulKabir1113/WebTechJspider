@@ -40,3 +40,8 @@ console.log(document.links);
 let d = document.links
 console.log(d);
 console.log(d[0]);
+
+
+document.images[1].alt="p"
+
+document.links[0].target="_blank"
