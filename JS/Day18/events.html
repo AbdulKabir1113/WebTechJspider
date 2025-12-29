@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <button onclick="demo()">click</button>
+    <button ondblclick="fun2()"> double click</button>
+
+    <img onmouseover="newImage()" onmouseout="oldImage()" src="./download (1).jpg" alt="">
+
+    <p onmouseover="newBackground()" onmouseout="oldBackground()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus</p>
+
+    <div onmouseover="incWidth()" onmouseout="decWidth()" style="width: 200px; height: 200px; border: 1px solid black;"></div>
+
+    <article onmousedown="incSize()" onmouseup="decSize()">
+        js is javaScript.
+        it is introduced by bredun each.
+        it is case-sensitive language.
+    </article>
+    <br><br>
+    <input onkeydown="down()" type="text" placeholder="key down"> <br><br>
+    <input onkeyup="up()" type="text" placeholder="key up">
+
+    <ol>
+        <li onmouseover="clr()" onmouseout="oldClr()">red</li>
+        <li onmouseover="clr1()" onmouseout="oldClr1()">yellow</li>
+        <li onmouseover="clr2()" onmouseout="oldClr2()">blue</li>
+        <li onmouseover="clr3()" onmouseout="oldClr3()">orange</li>
+    </ol>
+
+    <section onmousedown="circleSec()" onmouseup="sqrSec()"></section>
+    <div onmouseover="circle()" onmouseout="sqr()"></div>
+    <script src="./events.js"></script>
+</body>
+</html>
