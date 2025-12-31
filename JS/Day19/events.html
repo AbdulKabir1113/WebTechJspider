@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+</head>
+<body>
+    
+    <h1 onclick="demo()">hello</h1>
+    <h2 id="d1">hello h2</h2>
+    <button id="btn">login</button>
+    <button ondblclick="demo1()">dblclick</button>
+    <button onmouseover="demo1()" onmouseleave="demo2()">mouseover</button>
+    <button onmouseleave="demo1()">mouseleave</button>
+    <button onmouseleave="demo1()">mouseleave</button>
+    <button onpointerenter="demo1()">pointerenter</button>
+    <button onpointerleave="demo1()">pointerleave</button>
+
+    <input type="text" placeholder="keypress" onkeypress="demo1()">
+    <input type="text" placeholder="keyup" onkeyup="demo1()">
+    <input type="text" id="d3">
+
+    <button id="btn1">submit</button>
+    <h1 id="d4"></h1>
+    <script src="./events.js"></script>
+</body>
+</html>
