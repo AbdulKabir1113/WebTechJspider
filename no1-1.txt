@@ -1,0 +1,829 @@
+﻿Array Method
+----------------
+push()
+-------
+* The push method is used to add the element at the end of the array (or) at the tail of the array
+* It will accept n number of arguments.
+ex:
+var arr = [10,20]
+arr.push(40,30)
+console.log(arr);//[10,20,40,30]
+
+
+unshift()
+-------
+* The unshift method is used to add the element at the starting of the array (or) at the head of  array
+* It will accept n number of arguments.
+ex:
+var arr = [10,20]
+arr.unshift(40,30)
+console.log(arr);//[40,30,10,20]
+
+pop()
+-------
+* The pop method is used to remove elements from the end of the array (or) tail of the array
+* It accepts no arguments
+
+ex:
+var arr = [10,20,40,30]
+arr.pop()
+console.log(arr);//[10,20,40]
+
+shift()
+-------
+* The shift method is used to remove elements from the start of the array (or) at the head of a array
+* It accepts no arguments
+
+ex:
+var arr = [10,20,40,30]
+arr.shift()
+console.log(arr);//[20,40,30]
+
+indexof()
+---------
+* the indexof() method it returns the index of particular elemet which is passed through it.
+* arr.indexOf(item, from) – looks for item starting from index from, and returns the index where it was found, otherwise -1
+
+var arr = [10,210,30]
+arr.indexof(20);//2
+
+includes()
+----------
+
+* it will checks if an array contains a specified element if it is found it will return true or else false
+
+eg:
+let languages = ["JavaScript", "Java", "C", "C++", "Python", "Lua"];
+let check = languages.includes("Java");
+console.log(check); // true
+
+let check1 = languages.includes("c#");
+console.log(check1); // false
+
+  splice()
+---------
+* The splice() method returns an array by changing (adding/removing) its elements in place.
+* It will effect the original array 
+
+syntax:
+arr.splice(start, deleteCount, item1, ..., itemN)
+
+eg:
+ let prime_numbers = [2, 3, 5, 7, 9, 11];
+ let removedElement = prime_numbers.splice(4, 1, 13);
+ console.log(removedElement);
+
+
+
+ //Output: [ 9 ]
+// [ 2, 3, 5, 7, 13, 11 ]
+
+ slice()
+--------
+* The slice() method returns selected elements in an array, as a new array.
+* creates a new array
+*It will  not effect the original array 
+
+syntax:
+
+reference_name.slice(start index,end index)
+
+eg:
+var num = [10,20,30,40]
+console.log(num.slice(2,3));//[30]
+
+
+reverse()
+----------
+*The method arr.reverse reverses the order of elements in arr.
+
+eg:
+let arr = [1, 2, 3, 4, 5];
+console.log(arr.reverse());// 5,4,3,2,1
+
+
+sort()
+-----
+* It also returns the sorted array, but the returned value is usually ignored, as arr itself is modified.
+* it is a higher order method it will accept a call back function for sort the elements properly.
+For eg:
+-->  let arr = [ 1, 2, 15 ];
+// the method reorders the content of arr
+console.log(arr.sort());//1,15,2
+
+let e=arr.sort((x,y)=>{
+	return x-y
+	}
+//in ascending order
+console.log(e)//[1,2,15]
+
+let e1=arr.sort((x,y)=>{
+	return y-x
+	}
+//in descending order
+console.log(e)//[15,2,1]
+
+map()
+-----
+* The map() method in JavaScript creates a new array by applying a function to each element of the original array. 
+* it is a higher order method
+* It skips empty elements and does not alter the original array, making it ideal for transforming data.
+* It returns a new array and elements of arrays are the result of the callback function. 
+
+eg:
+     let  arr = [10,20,30,40]
+    
+    let  a1 = arr.map((e)=>{
+	return e;
+	})
+
+       console.log(a1)
+
+reduce()
+---------
+* The reduce() method in JavaScript executes a reducer function for each array element, returning a single accumulated value.
+* it is a higher order method
+* it will return sum of an array elements
+
+eg:
+     let  arr = [10,20,30,40]
+    
+    let  a1 = arr.reduce((acc,value)=>{
+	return acc+value;
+	})
+
+       console.log(a1)
+
+isArray()
+------------
+*The isArray() method in JavaScript is used to determine whether a given value is an array or not.
+* This method returns true if the argument passed is an array else it returns false. 
+
+ex:
+let arr=[10,20,30,40,50]
+console.log(Array.isArray(arr));
+
+join()
+---------
+* The JavaScript Array join() Method is used to join the elements of an array into a string. 
+* The elements of the string will be separated by a specified separator and its default value is a comma(,).
+ex:
+
+let arr=[10,20,30,40,50]
+console.log(arr.join("+"));//10+20+30+40+50
+
+
+concat()
+---------
+* The concat() method concatenates (joins) two or more arrays. 
+* It returns a new array, containing the joined arrays.
+* This method is useful for combining arrays without modifying the originals.
+ex:
+
+let arr=[10,20,30,40,50]
+let arr1=[80,65,85]
+console.log(arr1);
+
+console.log(arr.concat(arr1));
+console.log(arr.concat(10,50));
+
+entries()
+----------
+* The entries() method in JavaScript is used to create an iterator that returns key/value pairs for each index in the array.
+* It allows iterating over arrays and accessing both the index and value of each element sequentially.
+ex:
+ let arr=[10,20,30,40,50]
+let arr1=[80,65,85]
+let arr3=arr2.entries()
+console.log(arr3);
+for(let f of arr3){
+    console.log(f);
+}
+
+flat()
+------
+*The flat() method in JavaScript creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+* If no depth is provided, it defaults to 1.
+
+ex:
+
+let arr = [10,[20],[[30]],40,50]
+console.log(arr.flat(2))
+
+
+filter()
+------
+
+
+*The filter() method creates a new array filled with elements that pass a test provided by a function.
+* It’s a powerful tool for selectively extracting data from arrays based on specified criteria. 
+* it is a higher order method
+
+eg:
+   let  arr = [10,20,30,40]
+    
+    let  a1 = arr.filter((e)=>{
+	return e > 30;
+	})
+
+       console.log(a1)
+
+for of ()
+--------
+*The for...of statement executes a loop that operates on a sequence of values sourced from an iterable object. 
+
+eg:   let  arr = [10,20,30,40]
+
+       for( let i  of  arr){        o/p:
+          console.log(i)	     10
+      }		     20
+		     30
+		     40
+for in ()
+--------
+*The for...in statement executes a loop that operates on a sequence of values index value sourced from an iterable object. 
+
+eg:   let  arr = [10,20,30,40]
+
+      for( let i  of  arr){        o/p:
+          console.log(i)	     0
+      }		     1
+		     2
+		     3
+  ---------------------------------------------------------------------------------------------------------------------------------------------
+
+STRINGS
+
+The JavaScript string is a sequence of characters.
+There are 2 ways to create string in JavaScript
+1. By string literal
+2. By string object (using new keyword)
+3.By using constructor way
+
+
+1) By string literal
+The string literal is created using double quotes. 
+var stringname="string value"; 
+
+2) By string object (using new keyword)
+The syntax of creating string object using new keyword is given below:
+var stringname=new String("string literal"); 
+Here, new keyword is used to create instance of string.
+
+3) By constructor way (without using new keyword)
+The syntax of creating string object without using new keyword is given below:
+var stringname=String("string literal"); 
+Here, new keyword is not used to create instance of string.
+
+StringMethods()
+-------------------
+Javascript String methods:
+Some of the important javascript string functions include:
+
+1.charAt(x)
+
+This function will return the character at the x position within the string.
+var myString = 'jQuery FTW!!!';
+console.log(myString.charAt(7));
+//output: F
+
+2.charCodeAt(x)
+
+This function will return the unicode value of the character at position ‘x’ within the string.
+eg:
+var str7=`sheela`;
+var charcd=str7.charCodeAt(5);
+console.log(charcd);//97
+
+3.concat(v1,v2..)
+
+This function combines one or more strings(argv1,v2 etc) into existing one
+
+4.slice(start, [end])
+* This function returns a substring of the string based on the “start” and “end” index arguments, NOT including the “end” index itself. 
+* “End” is optional, and if none is specified, the slice includes all characters from “start” to end of the string.
+* fetch the part of string and returns new string
+* strig.slice(start , end) leaves end count and accepts negative values
+
+//slice(start, end)
+var text="excellent"
+text.slice(0,4) //returns "exce"
+text.slice(2,4) //returns "ce"
+
+
+var str1 = "javascript";
+var sc = str1.slice(0, 4);
+console.log(sc); //java
+// //or using negative values
+var str1='java script';
+var sc=str1.slice(-10);
+console.log(sc);//ava scrip
+
+
+5.split(delimiter, [limit])
+
+*This will split a string into many according to the specified 
+delimiter, and returns an array containing each element.
+eg:
+var text="excellent"
+var s=text.split("")
+console.log(s)//["e","x","c","e","l","l","e","n","t"]
+
+var str11=`Aladin joker`;
+var splt=str11.split(` `);
+console.log(splt);//(2) ['Aladin', 'joker']
+
+6.toLowerCase()
+
+* This will return the string with all of its characters converted to lowercase.
+var myString = 'JAVASCRIPT ROX';
+myString = myString.toLowerCase();
+console.log(myString)
+//output: javascript rox
+
+7.toUpperCase()
+
+This will return the string with all of its characters converted to uppercase.
+var myString = 'javascript rox';
+myString = myString.toUpperCase();
+console.log(myString)
+//output: JAVASCRIPT ROX
+
+8.includes()
+
+It is used to check whether a string contains the specified string or characters.
+var mystring = "Hello, welcome to edureka";
+var n = mystring.includes("edureka");
+console.log(n)
+//output: True
+
+9.endsWith()
+
+This function checks whether a string ends with specified string or characters.
+var mystr = "List of javascript functions";
+var n = mystr.endsWith("functions");
+console.log(n)
+//output: True
+
+10.repeat()
+
+This returns a new string with a specified number of copies of an existing string.
+var string = "Welcome to Edureka";
+console.log(string.repeat(2));
+//output: Welcome to Edureka Welcome to Edureka
+
+11.trim()
+This function removes whitespace from both ends of a string.
+
+var str = " Hello Edureka! ";
+console.log(str.trim())
+
+
+12.trimstart()
+This function removes whitespace from start of a string.
+
+var str = " Hello Edureka! ";
+console.log(str.trimstart())
+
+13.trimend()
+This function removes whitespace from end of a string.
+
+var str = " Hello Edureka! ";
+console.log(str.trimend())
+
+14.replace()
+* This function  will replace character or a string with  a given value(  character or a string )
+eg:
+var str9=`pune to bangolore`;
+var rplc=str9.replace(`pune`,`mangalore`);
+console.log(rplc);//mangalore to bangolore
+
+15.substring() 
+The JavaScript string substring() method fetch the part of the given string and return the new string.
+
+eg:
+syntax: substring(start, end);
+var str12=`good night `;
+var substr=str12.substring(7,1);
+console.log(substr);//ood ni
+
+
+16.substr() (deprecated method)
+The JavaScript string substr() method fetch the part of the given string and return the new string.
+var str13=`javascript`;
+var sbstr=str13.substr(0,4);
+console.log(sbstr);//java
+
+--------------------------------------------------------------------------------------------------------------------
+
+OBJECT
+
+*Any substance which has its existance in the real world is known as OBJECT.
+* Every object will have properties(attributes of feeds which describe them).
+* Every object will have actions(behaviours)
+EX:
+1.car:
+properties of car: model,color,price
+actions of car:accelarate,brake,start,stop
+2.webpage:
+properties of webpage:url,data/content on webpage.
+actions of webpage:scroll,hover,click
+Note:
+* In programming an object is a block of memory which represents a real world.
+* The properties of real world object are represented using variables
+* The actions of real world object are represented using METHODS(FUNCTIONS).
+* In javascript object is a collection of attributes and actions in the form 
+of key&value pairs enclosed within curly braces{}
+* Key represents properties/attributes of an object
+* Value represents state of an object.
+-In javascript,we can create js object in 3 different ways:
+
+1.Object literal{}
+------------------
+ex:
+
+let obj={
+    name:"reshma",
+    id:1
+}
+console.log(obj);
+
+2.Using a function
+-------------------
+ex:
+function obj1(name,id){
+    this.name=name;
+    this.id=id;
+}
+let obj2=new obj1('reshma',100)
+console.log(obj2);
+
+3.Using a new keyword
+----------------------------
+ex:
+
+let obj=new Object()
+console.log(obj);
+
+4.using a constructor way
+---------------------------
+ex:
+let obj=Object()
+console.log(obj);
+
+Note:
+* If the key is not present in the object then we get 'undefined' as the value.
+
+* The objects in javascript are mutable(state of the object can be modified) in nature.
+
+Object Methods:
+
+Object.create()
+This method is used to create a new object with the specified prototype object and properties.
+
+Object.entries()
+This method returns an array with arrays of the key, value pairs.
+
+Object.freeze()
+This method prevents existing properties from being removed.(we cannot update new key and value pair and also previous key and value pair)
+
+Object.keys()
+This method returns an array of a given object's own property names.
+
+Object.seal()
+This method prevents new properties from being added and marks all existing properties as non-configurable.(we cannot update new key and value pair but we can update previous key and value pair)
+
+Object.values()
+  This method returns an array of values
+---------------------------------------------------------------------
+Destructuring
+
+* It allows to convert elements into values from arrays, or properties from objects, into distinct variables data can be extracted from arrays, objects, and nested objects, and assigned to variables. 
+* In Destructuring Assignment on the left-hand side, we define which value should be unpacked from the sourced variable.
+
+* It allows to convert array elements into values and object keys into variables and this is called destructuring.
+
+let names = ["alpha", "beta", "gamma", "delta"];
+
+let firstName = names[0];
+let secondName = names[1];
+
+console.log(firstName);
+console.log(secondName);
+
+let arr=[10,30,40]
+let [a,b,c]=arr
+console.log(a)//10
+console.log(b)//30
+console.log(c)//40
+
+let obj={
+             name : "abc",
+             id : 123
+            }
+
+let {name,id}=obj
+console.log(name) //abc
+console.log(id)// 123
+
+-----------------------------------------------------------------------------------------------------
+
+Rest parameters(. . .)
+
+*The rest parameter it allows a function to accept an indefinite number of arguments as an array(packing the data)
+*A function definition can only have one rest parameter.
+*The rest parameter must be the last parameter in the function definition.
+
+eg: 
+    function demo(a,...b){
+        console.log(a)
+        console.log(b)
+    }
+demo(10,20,30,40,50)
+
+
+
+Spread parameters(. . .)
+
+*Spread parameter looks exactly like rest parameter. In a way, spread parameter is the opposite of rest parameter. (unpacking the data)
+*Spread pararmeter "expands" an array into its elements, while rest parameter collects multiple elements and "condenses" them into a single element.
+
+let arr=[10,20,30]
+let arr1=[50,80,90]
+
+let c=[...arr,...arr1]
+console.log(c)//[10,20,30,50,80,90]
+
+
+------------------------------------------------------------------------------------------------------
+
+fetching code
+---------------
+html code
+------------
+
+  <style>
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        /* video{
+            height: 200px;
+            width: 200px;
+        } */
+        #demo{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    </style>
+    
+    <input type="text" name="" id="word">
+    <button id="btn">search</button>
+    <div id="demo"></div>
+
+java script code
+-----------------------
+
+let btn =document.getElementById("btn")
+console.log(btn);
+
+btn.addEventListener("click" , () => {
+    let word = document.getElementById("word").value
+    console.log(word);
+    window.fetch(`https://pixabay.com/api/?key=38192665-2d3ab1349b930bd3f02761df2&q=${word}&image_type=photo&pretty=true`)
+    .then((x) => x.json())
+    .then((data) => {
+        console.log(data);
+        console.log(data.hits);
+        console.log(data.hits[0]);
+        console.log(data.hits[0].largeImageURL);
+        // let a = data.hits[0].largeImageURL
+        // let demo = document.getElementById("demo")
+        // let img = `<img src=${a} />`
+        // demo.innerHTML += img
+
+        for(let ele of data.hits)
+        {
+            // console.log(ele);
+            // console.log(ele.largeImageURL);
+            let a = ele.largeImageURL
+            let img = `<img src=${a} />`
+            demo.innerHTML += img
+            
+        }
+    })
+})
+
+
+for fetching the country api
+---------------------------------
+
+html code
+-----------
+
+       <input list="country">
+        <datalist id="country">
+
+        </datalist>
+        <div id="d1">
+
+        </div>
+
+js code by using ajax
+---------------------
+
+
+let inp2=document.getElementById("country")
+
+let ajax=new XMLHttpRequest()
+console.log(ajax);
+let s=ajax.open('GET' ,'./j1.json')
+ajax.onload=()=>{
+    console.log(ajax);
+    console.log(ajax.response);
+    let value=JSON.parse(ajax.response)
+    console.log(value[0].country);
+    for(let r of value){
+    let opt=`<option >${r.country}</option>`
+    inp2.innerHTML+=opt
+    }
+}
+
+ajax.send()
+
+
+toggle part
+----------------------------------
+
+          <nav>
+            <ol>
+                <li>home</li>
+                <li id="log">login</li>
+                <li>register</li>
+            </ol>
+        </nav>
+
+        <div id="d1">
+            login
+        </div>
+
+
+<style>
+ nav{
+           border: 2px solid; 
+        }
+        ol{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+           
+        }
+        div{
+            border: 2px solid;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+
+js code for  toggle
+-----------
+let login=document.getElementById("log")
+let div=document.getElementById("d1")
+login.addEventListener("click",()=>{
+    let a=login.classList.toggle("block")
+    if(a){
+        div.style.display="block"
+    }
+    else{
+        div.style.display="none"
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

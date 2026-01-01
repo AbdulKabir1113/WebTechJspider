@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+    <style>
+        #gp{
+            border: 2px solid black;
+            height: 150px;
+            width: 150px;
+            margin: auto;
+            text-align: center;
+        }
+        #par{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            text-align: center;
+        }
+        #ch{
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="gp">grand Parent
+        <div id="par">Parent
+            <div id="ch">chlid</div>
+        </div>
+    </div>
+
+    <script src="./eventdelegation.js"></script>
+</body>
+</html>
