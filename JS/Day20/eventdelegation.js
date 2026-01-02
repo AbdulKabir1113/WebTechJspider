@@ -4,9 +4,9 @@ let ch = document.getElementById("ch")
 
 gp.addEventListener("click",(e)=>{
     
-    // console.log(e);
-    // console.log(e.target);
-    // console.log(e.target.tagName);
+    console.log(e);
+    console.log(e.target);
+    console.log(e.target.tagName);
     // console.log(e.clientX);
     // console.log(e.clientY);
 
