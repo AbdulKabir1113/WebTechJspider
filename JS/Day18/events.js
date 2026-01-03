@@ -102,13 +102,13 @@ function oldClr3(){
 let section=document.querySelector("section");
 section.style.cssText="width:200px; height:200px; border:2px solid black; background-color:red;"
 
-function circleSec(){
-section.style.cssText="width:200px; height:200px; border:2px solid black; background-color:green; border-radius:50%;"
-}
+// function circleSec(){
+// section.style.cssText="width:200px; height:200px; border:2px solid black; background-color:green; border-radius:50%;"
+// }
 
-function sqrSec(){
-    section.style.cssText="width:200px; height:200px; border:2px solid black; background-color:red;"
-}
+// function sqrSec(){
+//     section.style.cssText="width:200px; height:200px; border:2px solid black; background-color:red;"
+// }
 
 let div1=document.querySelectorAll("div")[1];
 div1.style.cssText="width:200px; height:200px; border:2px solid black; background-color:green;"
@@ -120,4 +120,11 @@ div1.style.cssText="width:200px; height:200px; border:2px solid black; backgroun
 function sqr(){
     div1.style.cssText="width:200px; height:200px; border:2px solid black; background-color:green;"
 }
+
+// let section=document.querySelector("section");
+// section.style.cssText="width:200px; height:200px; border:2px solid black; background-color:red;"
+
+// function sqr(){
+//     section.style.cssText="width:200px; height:200px; border:2px solid black; background-color:green;"
+// }
 
