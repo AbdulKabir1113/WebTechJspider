@@ -1,5 +1,5 @@
 function demo3(a,b){
-    new promise((res,rej)=>{
+    new Promise((res,rej)=>{
         setTimeout(()=>{
             if(isNaN(a) || isNaN(b)){
                 rej()
@@ -9,7 +9,9 @@ function demo3(a,b){
         },5000)
     })
     .then(()=>{
-        console.log("hello then1");
+        for(let i=a; i<=b; i++){
+            console.log(i);  
+        }
     })
     .then(()=>{
         console.log("hello then2");
@@ -40,12 +42,16 @@ function demo3(a,b){
     })
 }
 
+demo3(2,3)
 
 // aync await
 
 async function demo(){
     console.log("hello 1");
     let x = await "hello 2"
-    log
-    
+    console.log(x);    
 }
+demo()
+console.log("hiii1");
+console.log("hii2");
+
